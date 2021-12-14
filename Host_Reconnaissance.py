@@ -39,12 +39,12 @@ def pastebin_upload(res):
     url = "https://pastebin.com/api/api_post.php"
 
     req = requests.post(url, data={
-        'api_dev_key' : "gGLryP9bbIcXo5IU2pWUrpavvAqKk5mq",
+        'api_dev_key' : "MASUKKAN_API_KEY", #masukkan api key
         'api_paste_code' : res,
         'api_paste_name' : "Hasil Host Reconnaissance",
         'api_option' : "paste"
     })
-    print(req.text)
+    print(req.text) #print link pastebin
 
 if __name__ == "__main__":
     main()
